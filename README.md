@@ -1,5 +1,7 @@
 
-# Event Manager
+# Weather app
+An mobile cum web application which shows live weather data of provided location.
+
 
 This repo contains the source code for Event Managing demo app [rohits-event-management.com](https://event-management-byrohit.onrender.com).
 
@@ -133,4 +135,5 @@ This repo contains the source code for Event Managing demo app [rohits-event-man
 * [Git](https://github.com/rohityellapu)
 * [Linkedin](https://www.linkedin.com/in/rohit-yellapu)
 * [Twitter](https://twitter.com/rohit_yellapu)
+
 
