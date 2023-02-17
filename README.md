@@ -3,8 +3,6 @@
 An mobile cum web application which shows live weather data of provided location.
 
 
-This repo contains the source code for Event Managing demo app [rohits-event-management.com](https://event-management-byrohit.onrender.com).
-
 ## Table of Content
 
 * [Features](#features)
@@ -19,11 +17,9 @@ This repo contains the source code for Event Managing demo app [rohits-event-man
 
 ## Features
 
-
-* Join Fabulous events connecting science and technology encouraging modern children and students to build future.
-* Note down the unique ticket number after successfull registration, as the token is required for joining the event later.
-* One User can register at multiple events by no user can register multiple times for a single event.
-* Admin can monitor the number of registrations for event and can even monitor how many registrants are attended the event.
+* Get live weather data of your current location, See status climate, wind speed, humidity and many more.
+* You can also get weather data of any city in the world just type the city name in the search box to get liver weather updates of the city.
+* Add some of your frequently searched cities in your favorite list to get updated climate status in a single click.
 
 
 
@@ -36,10 +32,6 @@ This repo contains the source code for Event Managing demo app [rohits-event-man
 <li>➡️HTML <img height="20" src="https://user-images.githubusercontent.com/25181517/192158954-f88b5814-d510-4564-b285-dff7d6400dad.png"></li>
 <li>➡️CSS <img height="20" src="https://user-images.githubusercontent.com/25181517/183898674-75a4a1b1-f960-4ea9-abcb-637170a00a75.png"></li>
 <li>➡️TailWind CSS <img height="20" src="https://user-images.githubusercontent.com/25181517/202896760-337261ed-ee92-4979-84c4-d4b829c7355d.png"></li>
-<li>➡️NodeJS <img height="20" src="https://user-images.githubusercontent.com/25181517/183568594-85e280a7-0d7e-4d1a-9028-c8c2209e073c.png"></li>
-<li>➡️Express <img height="20" src="https://user-images.githubusercontent.com/25181517/183859966-a3462d8d-1bc7-4880-b353-e2cbed900ed6.png"></li>
-<li>➡️RESTful API <img height="20" src="https://user-images.githubusercontent.com/25181517/192107858-fe19f043-c502-4009-8c47-476fc89718ad.png"></li>
-<li>➡️MongoDB <img height="20" src="https://user-images.githubusercontent.com/25181517/182884177-d48a8579-2cd0-447a-b9a6-ffc7cb02560e.png"></li>
 <li>➡️Visual Studio Code <img height="20" src="https://user-images.githubusercontent.com/25181517/192108891-d86b6220-e232-423a-bf5f-90903e6887c3.png"></li>
 <li>➡️GIT <img height="20" src="https://user-images.githubusercontent.com/25181517/192108372-f71d70ac-7ae6-4c0d-8395-51d8870c2ef0.png"></li>
 <li>➡️GitHub <img height="20" src="https://user-images.githubusercontent.com/25181517/192108374-8da61ba1-99ec-41d7-80b8-fb2f7c0a4948.png"></li>
@@ -53,25 +45,26 @@ This repo contains the source code for Event Managing demo app [rohits-event-man
 1. Node: any 12.x version starting with v12.0.0 or greater
 1. A fork of the repo (for any contributions)
 1. [React](https://reactjs.org/)
-
+1. Data Provided by [Weather API](https://www.weatherapi.com)
+1. Get api key and put it in the apiUrl.
 ### Installation
 
-1. `git clone https://github.com/rohityellapu/event-management.git` to clone the repo in your local environment
-1. `cd event-management` to go into the project root
+1. `git clone https://github.com/rohityellapu/weather-app` to clone the repo in your local environment
+1. `cd weather-app` to go into the project root
 1. `npm install or npm i` to install the website's npm dependencies
 
 ### Running locally
 
-1. Change apiUrl to your backend api or refer the backend implemtation [task-manager-api](https://github.com/rohityellapu/task-manager-api)
 1. `npm start` to start the hot-reloading development server
 1. `open http://localhost:3000` to open the site in your favorite browser
+1. Allow location access to the app when prompted by the app.
 
 ## Contributing
 
 
 ### Create a branch
 
-1. `git checkout main` from any folder in your local `event-management` repository
+1. `git checkout main` from any folder in your local `weather-app` repository
 1. `git pull origin main` to ensure you have the latest main code
 1. `git checkout -b the-name-of-my-branch` (replacing `the-name-of-my-branch` with a suitable name) to create a branch
 
@@ -92,13 +85,13 @@ This repo contains the source code for Event Managing demo app [rohits-event-man
 
 1. `git add -A && git commit -m "My message"` (replacing `My message` with a commit message, such as `Fix header logo on Android`) to stage and commit your changes
 1. `git push my-fork-name the-name-of-my-branch`
-1. Go to the [task-manager repo](https://github.com/rohityellapu/event-management) and you should see recently pushed branches.
+1. Go to the [task-manager repo](https://github.com/rohityellapu/weather-app) and you should see recently pushed branches.
 1. Follow GitHub's instructions.
 1. If possible, include screenshots of visual changes. A preview build is triggered after your changes are pushed to GitHub.
 
 ## Working Tree
 ```cmd
-│   .gitignore
+││   .gitignore
 │   package-lock.json
 │   package.json
 │   README.md
@@ -110,24 +103,25 @@ This repo contains the source code for Event Managing demo app [rohits-event-man
     │   index.js
     │   
     ├───components
-    │       AddEvent.jsx
-    │       Admin.jsx
     │       App.jsx
-    │       Event.jsx
-    │       EventDetail.jsx   
-    │       Events.jsx        
-    │       Loading.jsx       
-    │       Login.jsx
-    │       Nav.jsx
+    │       Favorites.jsx
+    │       FavWeather.jsx
+    │       Home.jsx
+    │       Loading.jsx
+    │       Search.jsx        
+    │       ShowWeather.jsx   
+    │       Weather.jsx       
     │
     └───images
-            loading.gif 
+            day.png
+            loading.gif       
+            night.png 
 ```
 
 ## Troubleshooting
 
 - `yarn reset` to clear the local cache
-- If any issue faced while running the app, please let us know [here](https://github.com/rohityellapu/event-management/issues)
+- If any issue faced while running the app, please let us know [here](https://github.com/rohityellapu/weather-app/issues)
 
 
 # Author: Rohit Yellapu
