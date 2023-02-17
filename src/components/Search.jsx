@@ -14,7 +14,7 @@ function Search() {
 
 
             { item.length > 1 && <Weather location={ item } /> }
-            <Link to='/' className='bg-cyan-400 rounded-xl text-xl text-center p-2 m-2 block hover:saturate-200 active:scale-95'>Go back Home<img className='h-6 w-6 mx-2 inline' src="https://img.icons8.com/ios-glyphs/256/home-page.png" alt="" /></Link>
+            <Link to='/' className='bg-cyan-400 rounded-xl text-xl text-center p-2 m-4 block hover:saturate-200 active:scale-95'>Go back Home<img className='h-6 w-6 mx-2 inline' src="https://img.icons8.com/ios-glyphs/256/home-page.png" alt="" /></Link>
         </div>
     )
 }
