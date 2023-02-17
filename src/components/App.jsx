@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import Home from './Home';
 import Search from './Search';
+import ShowWeather from './ShowWeather';
 
 function App() {
     return (
@@ -13,7 +14,7 @@ function App() {
 
                     <Route path='/' element={ <Home /> } />
                     <Route path='/search' element={ <Search /> } />
-
+                    <Route path='/:location' element={ <ShowWeather /> } />
                 </Routes>
             </BrowserRouter>
         </>
