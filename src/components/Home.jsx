@@ -69,7 +69,7 @@ function Home() {
     }, [currCords])
 
     return (
-        <div className={ `h-screen bg-amber-100` }>
+        <div className={ `min-h-screen bg-amber-100` }>
             { currCords == '' && <div className="p p-5 rounded-lg m-2 text-xl font-semibold text-center text-red-400">You need enable location to see local weather</div> }
 
             <Weather location={ currCords } />
